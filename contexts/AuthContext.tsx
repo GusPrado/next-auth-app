@@ -16,7 +16,7 @@ type SignInCredentials = {
 
 type AuthContextData = {
   signIn(credentials: SignInCredentials): Promise<void>;
-  user: User;
+  user: User | undefined;
   isAuthenticated: boolean;
 };
 
